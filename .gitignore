@@ -1,0 +1,39 @@
+# ---- model weights / derived weights (NON-COMMERCIAL — never publish) ----
+*.safetensors
+*.ckpt
+*.gguf
+*.weights
+*.pt
+*.pth
+*.bin
+*.npy
+
+# ONNX components embed/reference the model weights -> derived, do not publish
+onnx/
+onnx_fp16/
+onnx_fp16_dml/
+onnx_fp32_dml/
+onnx_dbg/
+*.onnx
+
+# ComfyUI = GPL-3.0 + contains the actual model + venv -> never publish
+ComfyUI/
+
+# scratch / caches / logs
+__pycache__/
+*.log
+
+# big generated outputs (keep only the curated ones added explicitly)
+anima_example.png
+onnx_e2e_256.png
+onnx_e2e_full.png
+verify_ref.png
+verify_pure_img.png
+onnx_fix_256.png
+onnx_fix_896x1152.png
+onnx_fix_fp16_256x256.png
+
+# personal marketing drafts (not part of the code release)
+POST.md
+post_arca_ko.txt
+post_reddit_en.txt
