@@ -1,0 +1,29 @@
+NOTICE — third-party dependencies and scope of the MIT license
+================================================================
+
+The MIT license in LICENSE covers the original scripts in this repository
+ONLY. It does NOT cover, and cannot grant any rights to, the third-party
+components below. This repository does not include any of them — you must
+obtain them yourself under their own terms.
+
+1. ComfyUI (GPL-3.0)
+   The export scripts (e.g. dit_export.py, vae_export.py, te_export.py,
+   adapter_export.py, overnight.py) import ComfyUI and monkeypatch its
+   internals at runtime. ComfyUI is licensed GPL-3.0 and is NOT included
+   here; install it separately. If you redistribute these export scripts
+   combined with ComfyUI, the combined work is subject to GPL-3.0.
+
+   The pure-inference scripts (pure_sampler.py, pure_te.py, pure_generate.py)
+   depend only on numpy and onnxruntime and do not import ComfyUI.
+
+2. Model weights — Anima / kiwimixAnima (non-commercial)
+   No model weights are included. Anima/kiwimixAnima is distributed under a
+   non-commercial license. Bring your own weights and comply with their terms.
+
+3. NVIDIA Cosmos-Predict2
+   Anima is a Cosmos-Predict2-2B derivative. The underlying model architecture
+   and any exported weights are subject to NVIDIA's Cosmos license.
+
+In short: the MIT grant applies to the code authored here. The model, the
+exported ONNX (which embeds the model weights), and ComfyUI each carry their
+own licenses and are your responsibility.

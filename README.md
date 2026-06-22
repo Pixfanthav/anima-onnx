@@ -83,7 +83,8 @@ DiT/VAE don't trace to clean ONNX out of the box. The working patches:
 
 ## Licensing
 
+- **This repo's scripts**: MIT (see `LICENSE`). Scripts only — no weights, no ComfyUI.
 - **Model weights**: not included. Anima/kiwimixAnima is non-commercial — bring your own.
-- **ComfyUI**: GPL-3.0, not included; install separately for the export step.
+- **ComfyUI**: GPL-3.0, not included; install separately for the export step. The export
+  scripts import/monkeypatch ComfyUI at runtime — see `NOTICE`.
 - **NVIDIA Cosmos-Predict2**: subject to NVIDIA's license.
-- This repo: scripts only.
