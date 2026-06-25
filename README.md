@@ -4,7 +4,7 @@ Run **Anima** (`kiwimixAnima`, a NVIDIA **Cosmos-Predict2-2B** DiT merge) for te
 **without ComfyUI or PyTorch at inference time** — only `onnxruntime` + `numpy`.
 
 Most on-device / lightweight diffusion stacks are locked to SD1.5 (e.g. Local Dream).
-This is, as far as I can tell, the first attempt to take a **Cosmos-Predict2 / Anima**
+This is an attempt to take a **Cosmos-Predict2 / Anima**
 model out of ComfyUI into a portable ONNX pipeline (target: phone NPU, but the ONNX
 pipeline runs anywhere).
 
